@@ -1,0 +1,143 @@
+.visitors {
+  background-color: var(--black-color);
+}
+
+.guests {
+  padding-top: 96px;
+  padding-bottom: 94px;
+}
+
+.guests__title {
+  margin-bottom: 10px;
+  color: var(--white-color);
+}
+
+.guests__text {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: var(--text_gray-color);
+}
+
+.guests__paragraph {
+  width: 70%;
+  margin-bottom: 48px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: var(--text_gray-color);
+}
+
+.guests__main {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.guests__main_item {
+  flex: 1 1 65%;
+}
+
+.accordion__btn {
+  width: 100%;
+  padding-top: 19px;
+  padding-right: 3px;
+  padding-bottom: 21px;
+  border: none;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid var(--text_gray-color);
+  border-bottom: 1px solid var(--text_gray-color);
+}
+
+.accordion__btn_title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+}
+
+.accordion__btn_arrow.open_arrow {
+  transform: rotate(180deg);
+  transition: all .3s ease-in-out;
+}
+
+.accordion__content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--white-color);
+
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  will-change: max-height;
+  transition: all 0.3s ease-out;
+  box-sizing: content-box;
+}
+
+.open {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  height: 100%;
+  opacity: 1;
+}
+
+.accordion__content_item {
+  flex: 1 0 26%;
+}
+
+.accordion__content_item-name {
+  margin-bottom: 16px;
+  cursor: pointer;
+}
+
+.accordion__content_item-name:last-child {
+  display: none;
+}
+
+.geusts__main_dossier {
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.dossier__photo {
+  width: 350px;
+  height: 220px;
+  background-image: url(../images/woman.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.dossier__title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 20px;
+  color: var(--white-color);
+}
+
+.dossier__text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 180%;
+  color: var(--text_gray-color);
+}
+
+.dossier__button {
+  padding: 12px 19px;
+  border: 2px solid var(--primary_light-color);
+  border-radius: 77px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--primary_light-color);
+}

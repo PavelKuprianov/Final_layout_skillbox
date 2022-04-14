@@ -1,0 +1,16 @@
+:root {
+	--white-color: #fff;
+  --primary-color: #6D31EE;
+  --primary_chade-color: #4F28A5;
+  --primary_light-color: #AA9DFA;
+  --light_color-color: #E6E8EC;
+  --text_gray-color: #A1A6B4;
+  --chade_gray-color: #D2D5DD;
+  --light_color_40-color: rgba(230, 232, 236, 0.4);
+	--black-color: #121723;
+	--light_black-color: #292E39;
+	--red-color: #FF6F6F;
+	--promo-color: #F0D288;
+	--promo_chande-color: #BB973E;
+  --background_header-color: #F2F2F2;
+}
