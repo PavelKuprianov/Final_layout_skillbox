@@ -41,9 +41,9 @@
 
 .accordion__btn {
   width: 100%;
-  padding-top: 19px;
+  padding-top: 20px;
   padding-right: 3px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
   border: none;
   background: transparent;
   display: flex;
@@ -86,7 +86,7 @@
 
 .open {
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 14px;
   height: 100%;
   opacity: 1;
 }
@@ -113,12 +113,30 @@
 .dossier__photo {
   width: 350px;
   height: 220px;
-  background-image: url(../images/woman.jpg);
+  margin-bottom: 14px;
+  object-fit: cover;
+  /* background-image: url(../images/plug.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
+}
+
+.dossier__group {
+  display: none;
+}
+
+.dossier__social {
+  margin-bottom: 13px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.dossier__social a {
+  margin-right: 34px;
 }
 
 .dossier__title {
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -126,6 +144,7 @@
 }
 
 .dossier__text {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 16px;
   line-height: 180%;
@@ -133,11 +152,65 @@
 }
 
 .dossier__button {
-  padding: 12px 19px;
+  width: 46%;
+  padding: 10px 16px;
   border: 2px solid var(--primary_light-color);
   border-radius: 77px;
   font-weight: 500;
   font-size: 16px;
   line-height: 16px;
   color: var(--primary_light-color);
+}
+
+@media (max-width: 1160px) {
+  .accordion__content_item:last-child {
+    display: none;
+  }
+
+  .accordion__content_item {
+    flex: 1 0 35%;
+  }
+
+  .accordion__content_item-name:last-child {
+    display: block;
+  }
+
+  .dossier__photo {
+    width: 255px;
+    height: 159px;
+  }
+
+  .open {
+    padding-bottom: 15px;
+  }
+
+  .dossier__button {
+    width: 63%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .guests__paragraph {
+    width: 100%;
+  }
+
+  .guests__main {
+    flex-direction: column;
+  }
+
+  .guests__main_item {
+    width: 100%;
+  }
+
+  .accordion__content_item-name {
+    margin-bottom: 30px;
+  }
+
+  .accordion__content_item-name:last-child {
+    display: block;
+  }
+
+  .open {
+    padding-bottom: 2px;
+  }
 }

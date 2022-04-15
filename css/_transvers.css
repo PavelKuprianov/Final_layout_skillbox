@@ -291,6 +291,7 @@
 
   .broadcast__right_bottom {
     padding-top: 30px;
+    padding-bottom: 26px;
     display: flex;
     width: 100%;
     align-items: center;
@@ -451,9 +452,6 @@
     margin-bottom: 11px;
     padding: 6px 17px;
   }
-
-  
-
 }
 
         
