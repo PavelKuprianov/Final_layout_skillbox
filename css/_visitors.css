@@ -39,7 +39,16 @@
   flex: 1 1 65%;
 }
 
-.accordion__btn {
+.ac {
+  border: none;
+  margin-top: 0;
+}
+
+.accordion.ac {
+  background-color: var(--black-color);
+}
+
+.accordion__btn.ac-trigger {
   width: 100%;
   padding-top: 20px;
   padding-right: 3px;
@@ -53,16 +62,18 @@
   border-bottom: 1px solid var(--text_gray-color);
 }
 
+.ac .ac-trigger {
+  font: 500 20px 'Muller';
+  text-align: left;
+  width: 100%;
+  padding: 34px 30px 34px 2px;
+}
+
 .accordion__btn_title {
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
   color: var(--white-color);
-}
-
-.accordion__btn_arrow.open_arrow {
-  transform: rotate(180deg);
-  transition: all .3s ease-in-out;
 }
 
 .accordion__content {
@@ -73,15 +84,21 @@
   font-size: 16px;
   line-height: 16px;
   color: var(--white-color);
+}
 
-  max-height: 0;
-  opacity: 0;
-  overflow: hidden;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  will-change: max-height;
-  transition: all 0.3s ease-out;
-  box-sizing: content-box;
+.ac .ac-trigger::after {
+  content: url('../images/arrow_down.svg');
+  right: 33px;
+}
+
+.ac.is-active>.ac-header .ac-trigger::after {
+  content: url('../images/arrow_app.svg');
+  right: 33px;
+}
+
+.ac.is-active .accordion__content.ac-panel {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .open {
@@ -114,10 +131,17 @@
   width: 350px;
   height: 220px;
   margin-bottom: 14px;
-  object-fit: cover;
+
   /* background-image: url(../images/plug.jpg);
   background-size: cover;
   background-repeat: no-repeat; */
+}
+
+.dossier__photo_img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;  
+  overflow: hidden;
 }
 
 .dossier__group {
@@ -200,6 +224,7 @@
 
   .guests__main_item {
     width: 100%;
+    margin-bottom: 16px;
   }
 
   .accordion__content_item-name {
@@ -213,4 +238,10 @@
   .open {
     padding-bottom: 2px;
   }
+
+  .dossier__photo {
+    width: 540px;
+    height: 220px;
+  }
+    
 }

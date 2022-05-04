@@ -13,12 +13,15 @@
   <link rel="stylesheet" href="./css/normalize.css">
 
   <link rel="stylesheet" href="./css/choices.min.css">
+  <link rel="stylesheet" href="./css/accordion.min.css">
+
 
   <link rel="stylesheet" href="./css/default.css">
   <link rel="stylesheet" href="./css/style.css">
 
   <script defer src="./js/choices.min.js"></script>
   <script defer src="./js/script_choices.js"></script>
+  <script defer src="./js/accordion.min.js"></script>
   <script defer src="./js/accordion.js"></script>
   <script defer src="./js/dossier.js"></script>
 </head>
@@ -904,18 +907,16 @@
           других интересных гостей!
         </p>
         <div class="guests__main">
-          <ul class="guests__main_item">
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Блогеры</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+
+          <ul class="guests__main_item accordion-container">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger">
+                  <span class="accordion__btn_title">Блогеры</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel">
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -946,17 +947,15 @@
               </div>
             </li>
 
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Арт-критики</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger" aria-expanded="false">
+                  <span class="accordion__btn_title">Арт-критики</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel" aria-hidden="true">
+
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -985,19 +984,18 @@
                   <li class="accordion__content_item-name"></li>
                 </ul>
               </div>
+
             </li>
 
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Художники</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger" aria-expanded="false">
+                  <span class="accordion__btn_title">Художники</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel" aria-hidden="true">
+
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -1026,19 +1024,18 @@
                   <li class="accordion__content_item-name"></li>
                 </ul>
               </div>
+
             </li>
 
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Люди науки</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger" aria-expanded="false">
+                  <span class="accordion__btn_title">Люди науки</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel" aria-hidden="true">
+
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -1067,19 +1064,18 @@
                   <li class="accordion__content_item-name"></li>
                 </ul>
               </div>
+
             </li>
 
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Историки</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger" aria-expanded="false">
+                  <span class="accordion__btn_title">Историки</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel" aria-hidden="true">
+
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -1108,19 +1104,18 @@
                   <li class="accordion__content_item-name"></li>
                 </ul>
               </div>
+
             </li>
 
-            <li class="accordion">
-              <button class="accordion__btn" aria-expanded="false">
-                <span class="accordion__btn_title">Филологи</span>
-                <div class="accordion__btn_arrow">
-                  <svg width="42" height="42" viewBox="0 0 42 42" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <circle cx="21" cy="21" r="20" stroke="#A1A6B4" stroke-width="2" />
-                    <path d="M13 19L21 27L29 19" stroke="#A1A6B4" stroke-width="2" stroke-linecap="square" />
-                  </svg>
-                </div>
-              </button>
-              <div class="accordion__content" aria-hidden="true">
+            <li class="accordion ac">
+              <div class="ac-header">
+                <button class="accordion__btn ac-trigger" aria-expanded="false">
+                  <span class="accordion__btn_title">Филологи</span>
+                </button>
+              </div>
+
+              <div class="accordion__content ac-panel" aria-hidden="true">
+
                 <ul class="accordion__content_item">
                   <li class="accordion__content_item-name">Сергей Денисов</li>
                   <li class="accordion__content_item-name">Матвей Мечников</li>
@@ -1149,7 +1144,9 @@
                   <li class="accordion__content_item-name"></li>
                 </ul>
               </div>
+
             </li>
+
           </ul>
           <div class="geusts__main_dossier">
             <div class="dossier__photo">
